@@ -1,10 +1,13 @@
 <template>
-  <div class="theme-container">
-    <div class="theme-vdoing-content">
-      <span>404</span>
-      <blockquote>{{ getMsg() }}</blockquote>
-      <router-link to="/">返回首页</router-link>
-    </div>
+<!--  <div class="theme-container">-->
+<!--    <div class="theme-vdoing-content">-->
+<!--      <span>404</span>-->
+<!--      <blockquote>{{ getMsg() }}</blockquote>-->
+<!--      <router-link to="/">返回首页</router-link>-->
+<!--    </div>-->
+<!--  </div>-->
+  <div>
+    <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://dra-m.com/" homePageName="回到我的主页"></script>
   </div>
 </template>
 
