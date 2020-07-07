@@ -27,8 +27,6 @@ if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TO
 else
   codingUrl=https://moxiaolong:${CODING_TOKEN}@e.coding.net:moxiaolong/dram/dram.git
 fi
-git add -A
-git commit -m "${msg}"
 echo "上传coding开始"
 git push -f $codingUrl master # 推送到coding
 echo "上传coding完成"
