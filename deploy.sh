@@ -25,7 +25,7 @@ echo "上传github完成"
 if [ -z "$CODING_TOKEN" ]; then # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:moxiaolong/dram/dram.git
 else
-  codingUrl=https://moxiaolong:${CODING_TOKEN}@e.coding.net/moxiaolong/dram/dram.git
+  codingUrl=https://JPzWHIuoAv:${CODING_TOKEN}@e.coding.net/moxiaolong/dram/dram.git
 fi
 echo "上传coding开始"
 git push -f $codingUrl master # 推送到coding
