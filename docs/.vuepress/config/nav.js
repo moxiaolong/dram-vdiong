@@ -18,7 +18,7 @@ module.exports = [
     // ]
   },
   {
-    text: '想法',
+    text: '冥思',
     link: '/idea/',
     // items: [
     //   {text: 'HTML', link: '/pages/8309a5b876fc95e3/'},
@@ -26,25 +26,24 @@ module.exports = [
     // ]
   },
 
-  {
-    text: '其他',
-    link: '/other/',
+  // {
+    // text: '其他',
+    // link: '/other/',
     // items: [
     //   {text: '学习', link: '/pages/a8692ab3bdcb4588/'},
     //   {text: '面试', link: '/pages/aea6571b7a8bae86/'},
     //   {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
     //   {text: '友情链接', link: '/friends/'},
     // ]
-  },
+  // },
   // {text: '关于', link: '/about/'},
   {
     text: '收藏',
-    link: '/pages/beb6c0bd8a66cea6/',
-    items: [
-      {text: '网站', link: '/pages/beb6c0bd8a66cea6/'},
-      {text: '资源', link: '/pages/eee83a9211a70f9d/'},
-      {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
-    ]
+    link: '/pages/favorites/url/',
+    // items: [
+    //   {text: '网站', link: '/pages/url/'},
+    //   {text: '资源', link: '/pages/resource/'}
+    // ]
   },
   {
     text: '索引',
