@@ -18,6 +18,7 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
+echo "上传github开始"
 git push -f $githubUrl master:master # 推送到github
 echo "上传github完成"
 # deploy to coding
@@ -28,6 +29,7 @@ else
 fi
 git add -A
 git commit -m "${msg}"
+echo "上传coding开始"
 git push -f $codingUrl master # 推送到coding
 echo "上传coding完成"
 
