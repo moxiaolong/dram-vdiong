@@ -7,6 +7,8 @@ module.exports = {
     head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
         // ['script', {src: '/live2d/autoload.js'}],
         ['link', {rel: 'icon', href: '/img/logo.png'}], //favicons，资源放在public文件夹
+        ['link', {rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}], //favicons，资源放在public文件夹
+
         ['meta', {name: 'keywords', content: '后端技术,DragonMo,Dra-M,莫小龙'}],
         ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
         ['meta', {name: 'theme-color', content: '#7b074b'}], // 移动浏览器主题颜色
@@ -100,7 +102,7 @@ module.exports = {
                 },
 
                 {
-                    iconClass: 'icon-erji',
+                    iconClass: 'icon-music',
                     title: '有品位的歌单',
                     link: 'http://music.163.com/playlist?id=8444337'
                 }
@@ -114,12 +116,16 @@ module.exports = {
     plugins: [ // 插件
 
         // ['vuepress-plugin-nprogress'],
+        [
+            'reading-progress'
+            // {fixed: "bottom"}
+        ],
 
 
         [
             require.resolve('../../vuepress-plugin-copyright'),
             {
-                authorName:"Dra-M.com",
+                authorName: "Dra-M.com",
                 noCopy: false, // the selected text will be uncopiable
                 minLength: 100, // if its length is greater than 100
             },
