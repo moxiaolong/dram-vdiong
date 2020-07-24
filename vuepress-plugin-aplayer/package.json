@@ -1,0 +1,77 @@
+{
+  "name": "vuepress-plugin-aplayer",
+  "version": "1.0.2",
+  "description": "aplayer for vuepress.",
+  "keywords": [
+    "vuepress",
+    "plugin",
+    "aplayer"
+  ],
+  "homepage": "https://upcwangying.com",
+  "bugs": "https://github.com/upcwangying/vuepress-plugin-aplayer/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upcwangying/vuepress-plugin-aplayer.git"
+  },
+  "license": "MIT",
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "codecov": "codecov",
+    "release": "standard-version",
+    "test": "echo \"Info: test finished.\" && exit 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "package.json": [
+      "sort-package-json",
+      "git add"
+    ],
+    "packages/*/src/**/*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "aplayer": "^1.10.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@commitlint/cli": "8.3.4",
+    "@commitlint/config-conventional": "8.3.4",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.9.0",
+    "codecov": "3.6.1",
+    "eslint": "6.7.1",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-vue": "6.0.1",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "lerna": "3.16.4",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1",
+    "sort-package-json": "^1.36.0",
+    "standard-version": "7.1.0",
+    "ts-jest": "24.3.0",
+    "typescript": "3.7.4",
+    "vue-eslint-parser": "7.0.0",
+    "vue-jest": "3.0.5"
+  },
+  "peerDependencies": {
+    "aplayer": "^1.10.1"
+  },
+  "authors": [
+    "Ying Wang <upcwangying@126.com> (https://github.com/upcwangying)"
+  ]
+}

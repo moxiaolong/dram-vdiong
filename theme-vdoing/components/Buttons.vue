@@ -35,6 +35,9 @@
         </ul>
       </transition>
     </div>
+
+
+
   </div>
 </template>
 
@@ -107,7 +110,7 @@ export default {
       }, 100))
     }
 
-    
+
     // 移动端对类似:hover效果的处理
     const buttons = document.querySelectorAll('.buttons .button')
     for (let i = 0; i < buttons.length; i++) {
@@ -121,7 +124,7 @@ export default {
         }, 150)
       })
     }
-    
+
   },
   computed: {
     showToTop () {
@@ -230,14 +233,14 @@ export default {
         margin 0
         padding .8rem 0
         position absolute
-        bottom 0rem
+        bottom 0
         right 1.5rem
         background var(--mainBg)
         border 1px solid var(--borderColor)
         width 120px
         border-radius 6px
         box-shadow 0 0 15px rgba(255,255,255,.2)
-        li 
+        li
           list-style none
           line-height 2rem
           font-size .95rem

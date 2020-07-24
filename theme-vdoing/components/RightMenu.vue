@@ -47,7 +47,7 @@ export default {
 
 .right-menu-wrapper
   width $rightMenuWidth
-  float right 
+  float right
   margin-right -($rightMenuWidth + 60px)
   position sticky
   top 0
@@ -82,7 +82,7 @@ export default {
         &:hover
           color $accentColor
 
-.have-body-img 
+.have-body-img
   .right-menu-wrapper
     .right-menu-margin
       padding .3rem 0
