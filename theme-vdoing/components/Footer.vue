@@ -32,7 +32,6 @@
                 options: {
                     fixed: true,
                     theme: "#7b074b",
-                    lrcType: 3,
                     order: "random",
                     audio: [
                         {
