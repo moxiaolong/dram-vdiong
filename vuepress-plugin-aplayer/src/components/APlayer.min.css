@@ -102,8 +102,8 @@
 
 .aplayer.aplayer-fixed .aplayer-body {
     position: fixed;
-    bottom: 2.5rem;
-    left: 2rem;
+    bottom: 2rem;
+    left: 1.5rem;
     right: 0;
     margin: 0;
     z-index: 99;

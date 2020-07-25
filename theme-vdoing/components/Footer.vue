@@ -38,67 +38,67 @@
                         {
                             name: '热河2015现场版',
                             artist: '南京市民李先生',
-                            url: '../../music/热河.mp3',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhtMnpDbVR1RFdDVXN2TXc/ZT1iT2RjY3M=.mp3',
                             cover: '../../music/热河.jpg',
                         },
                         {
                             name: '和你在一起',
                             artist: '南京市民李先生',
-                            url: '../../music/和你在一起.m4a',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhmeF9BSkNjSDFRZ3JPZFE/ZT0yeVRTd2c=.m4a',
                             cover: '../../music/工体东路没有人.jpg',
                         },
                         {
                             name: '鸵鸟&天空之城&我们不能失去信仰(iO版)',
                             artist: '南京市民李先生',
-                            url: '../../music/鸵鸟&天空之城&我们不能失去信仰(iO版).mp3',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODgyX1lNbjJWYWNCaGo1SkE/ZT1RdmtqVGY=.mp3',
                             cover: '../../music/李志.jpg',
                         },
                         {
                             name: '这个世界会好吗 (相信未来版)',
                             artist: '南京市民李先生',
-                            url: '../../music/这个世界会好吗 (相信未来版) - 李志.flac',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODgzUVJhWVgzTFI4VllxY0E/ZT1Bb0hScnI=.flac',
                             cover: '../../music/李志.jpg',
                         },
 
                         {
                             name: '杭州&我们不能失去信仰',
                             artist: '南京市民李先生',
-                            url: '../../music/杭州&我们不能失去信仰.flac',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODg1Tjh0azlFWTU2WS1Tb0E/ZT1lWmVDTWg=.flac',
                             cover: '../../music/李志.jpg',
                         },
                         {
                             name: '暧昧',
                             artist: '南京市民李先生',
-                            url: '../../music/暧昧.m4a',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhjMFBMSWhNQldQaHRJRGc/ZT0xMlloZ2U=.m4a',
                             cover: '../../music/工体东路没有人.jpg',
                         }, {
                             name: '定西(2014i／O版)',
                             artist: '南京市民李先生',
-                            url: '../../music/定西(2014i／O版).mp3',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhraFpuaVJINFZYbnlxdWc/ZT1yTHpZajA=.mp3',
                             cover: '../../music/李志.jpg',
                         }, {
                             name: '山阴路的夏天',
                             artist: '南京市民李先生',
-                            url: '../../music/山阴路的夏天.mp3',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhlbzZiT3BobEdtYjh4TWc/ZT0ybHRDV3E=.mp3',
                             cover: '../../music/李志.jpg',
                         },
                         {
                             name: '卡夫卡',
                             artist: '南京市民李先生',
-                            url: '../../music/卡夫卡.m4a',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhoM3p5XzVWd0xuS3lfM3c/ZT05NlVhVWg=.m4a',
                             cover: '../../music/工体东路没有人.jpg',
                         },
 
                         {
                             name: '下雨&董卓瑶&忽然(IO版).mp3',
                             artist: '南京市民李先生',
-                            url: '../../music/下雨&董卓瑶&忽然(IO版).mp3',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODg0THRiTnIyQUJPWFVRZHc/ZT1WNDM4ano=.mp3',
                             cover: '../../music/李志.jpg',
                         },
                         {
                             name: '被禁忌的游戏',
                             artist: '南京市民李先生',
-                            url: '../../music/被禁忌的游戏.m4a',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhnRTQzcHR2Q0NBNWhabFE/ZT1HdENXSEU=.m4a',
                             cover: '../../music/工体东路没有人.jpg',
                         }
 
