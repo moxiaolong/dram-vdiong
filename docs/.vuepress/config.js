@@ -1,4 +1,5 @@
 const nav = require('./config/nav.js');
+const path = require('path');
 
 module.exports = {
     title: "Dra-M",
@@ -296,6 +297,8 @@ module.exports = {
 //     }
 //   }
 // }
+
+
 
     configureWebpack: () => {
         const NODE_ENV = process.env.NODE_ENV
