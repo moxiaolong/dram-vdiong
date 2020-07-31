@@ -2,18 +2,16 @@
  * Live2D Widget
  * https://github.com/stevenjoezhang/live2d-widget
  */
-const live2D = require("./live2d.min.js")
-// const json = require("./waifu-tips.json")
-const json ={}
+
 function loadWidget(config) {
-    let {apiPath, cdnPath} = config;
+    let {waifuPath, apiPath, cdnPath} = config;
     let useCDN = false, modelList;
     if (typeof cdnPath === "string") {
         useCDN = true;
         if (!cdnPath.endsWith("/")) cdnPath += "/";
     }
     if (!apiPath.endsWith("/")) apiPath += "/";
-    localStorage.setItem("waifu-display",Date.now());
+    localStorage.setItem("waifu-display", Date.now());
     sessionStorage.removeItem("waifu-text");
 
 // <!--				<span class="fa fa-lg fa-user-circle"></span>-->
@@ -171,7 +169,9 @@ function loadWidget(config) {
             modelTexturesId = 48; // 材质 ID
         }
         loadModel(modelId, modelTexturesId);
-        let result = json;
+        fetch(waifuPath)
+            .then(response => response.json())
+            .then(result => {
 
                 result.mouseover.forEach(tips => {
                     window.addEventListener("mouseover", event => {
@@ -200,7 +200,7 @@ function loadWidget(config) {
                         messageArray.push(text);
                     }
                 });
-
+            });
     })();
 
     async function loadModelList() {
@@ -216,9 +216,9 @@ function loadWidget(config) {
         if (useCDN) {
             if (!modelList) await loadModelList();
             let target = randomSelection(modelList.models[modelId]);
-            live2D.liveModel("live2d", `${cdnPath}model/${target}/index.json`);
+            loadlive2d("live2d", `${cdnPath}model/${target}/index.json`);
         } else {
-            live2D.liveModel("live2d", `${apiPath}get/?id=${modelId}-${modelTexturesId}`);
+            loadlive2d("live2d", `${apiPath}get/?id=${modelId}-${modelTexturesId}`);
             console.log(`Live2D 模型 ${modelId}-${modelTexturesId} 加载完成`);
         }
     }
@@ -276,7 +276,7 @@ function initWidget(config, apiPath = "/") {
 // 	</div>`);
     let toggle = document.getElementById("waifu-toggle");
     toggle.addEventListener("click", () => {
-        localStorage.setItem("waifu-display",Date.now());
+        localStorage.setItem("waifu-display", Date.now());
         toggle.style.opacity = '0';
         setTimeout(() => {
             toggle.style.display = "none";
@@ -286,7 +286,7 @@ function initWidget(config, apiPath = "/") {
             loadWidget(config);
             toggle.removeAttribute("first-time");
         } else {
-             document.getElementById("waifu").style.display = "";
+            document.getElementById("waifu").style.display = "";
             setTimeout(() => {
                 document.getElementById("waifu").style.bottom = '-12px';
             }, 0);
@@ -294,7 +294,7 @@ function initWidget(config, apiPath = "/") {
     });
 
     //是否关闭
-    if (localStorage.getItem("waifu-display")==null) {
+    if (localStorage.getItem("waifu-display") == null) {
         //是
 
         toggle.setAttribute("first-time", true);
@@ -306,11 +306,6 @@ function initWidget(config, apiPath = "/") {
         loadWidget(config);
 
     }
-}
-
-
-module.exports = {
-    initWidget: initWidget
 }
 
 

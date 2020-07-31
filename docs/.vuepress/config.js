@@ -117,7 +117,6 @@ module.exports = {
 
         //音乐播放器
         [require.resolve('./plugins/vuepress-plugin-aplayer')],
-        [require.resolve('./plugins/live2d')],
 
 
         [
