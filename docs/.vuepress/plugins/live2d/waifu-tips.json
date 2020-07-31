@@ -77,7 +77,7 @@
       ]
     },
     {
-      "selector": ".menu-item-home",
+      "selector": ".menu-item-home,.logo",
       "text": [
         "点击前往首页，想回到上一页可以使用浏览器的后退功能哦。",
         "点它就可以回到首页啦！",
@@ -189,7 +189,7 @@
       ]
     },
     {
-      "selector": ".container a[href^='http'], .nav-link .nav-text",
+      "selector": ".container a[href^='http'], .nav-link",
       "text": [
         "要去看看 <span>{text}</span> 么？",
         "去 <span>{text}</span> 逛逛吧。",
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "selector": ".back-to-top",
+      "selector": ".go-to-top",
       "text": [
         "点它就可以回到顶部啦！",
         "又回到最初的起点～",
@@ -313,7 +313,7 @@
       ]
     },
     {
-      "selector": ".post-nav-item a[rel='next']",
+      "selector": ".post-nav-item a[rel='next'],.page-nav-centre-next",
       "text": [
         "来看看下一篇文章吧。",
         "点它可以看下一篇文章哦！",
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "selector": ".post-nav-item a[rel='prev']",
+      "selector": ".post-nav-item a[rel='prev'],.page-nav-centre-prev",
       "text": [
         "来看看上一篇文章吧。",
         "点它可以看上一篇文章哦！",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "selector": ".extend.next",
+      "selector": ".pagination .next",
       "text": [
         "去下一页看看吧。",
         "点它可以前进哦！",
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "selector": ".extend.prev",
+      "selector": ".pagination .prev",
       "text": [
         "去上一页看看吧。",
         "点它可以后退哦！",
@@ -388,17 +388,22 @@
       ]
     },
     {
-      "selector": ".vpreview-btn",
+      "selector": ".gt-btn-preview",
       "text": [
         "要预览一下你的发言吗？",
         "快看看你的评论有多少负熵！"
       ]
     },
     {
-      "selector": ".vsubmit",
+      "selector": ".gt-btn-public",
       "text": [
         "评论没有审核，要对自己的发言负责哦～",
         "要提交了吗，请耐心等待回复哦～"
+      ]
+    },  {
+      "selector": ".gt-btn-login",
+      "text": [
+        "要用GitHub登录才能评论哦～"
       ]
     },
     {
@@ -407,9 +412,43 @@
         "哇，快看看这个精彩评论！",
         "如果有疑问，请尽快留言哦～"
       ]
+    },
+    {
+      "selector": ".avatar img",
+      "text": [
+        "好帅的头像阿！"
+      ]
+    },
+    {
+      "selector": ".icon-erji",
+      "text": [
+        "网易云的歌单哦～"
+      ]
+    },
+    {
+      "selector": ".aplayer-play",
+      "text": [
+        "要听歌嘛？~"
+      ]
+    },
+    {
+      "selector": "#main-title",
+      "text": [
+        "<span>Dra-M</span> 是 <span>DragonMo</span> 的缩写 ～",
+        "<span>DragonMo</span> 就是 <span>莫小龙</span>  ～！",
+        "是 <span>Dra-M</span> 不是 Dream 哦 ～"
+      ]
     }
   ],
   "click": [
+    {
+      "selector": "#main-title",
+      "text": [
+        "<span>Dra-M</span> 是 <span>DragonMo</span> 的缩写 ～",
+        "<span>DragonMo</span> 就是 <span>莫小龙</span>  ～！",
+        "是 <span>Dra-M</span> 不是 Dream 哦 ～"
+      ]
+    },
     {
       "selector": "#waifu #live2d",
       "text": [
@@ -431,6 +470,7 @@
         "有什么想说的吗？"
       ]
     },
+
     {
       "selector": ".vsubmit",
       "text": [

@@ -14,7 +14,7 @@
 
         <a-player :options="options"/>
 
-        <script src="../../live2d/autoload.js"></script>
+<!--        <script src="../../live2dold/autoload.js"></script>-->
         <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
         Theme by <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a>
         <template v-if="footer">

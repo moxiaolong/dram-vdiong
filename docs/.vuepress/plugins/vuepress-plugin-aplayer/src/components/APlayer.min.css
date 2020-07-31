@@ -101,6 +101,7 @@
 
 
 .aplayer.aplayer-fixed .aplayer-body {
+    display: none;
     position: fixed;
     bottom: 2rem;
     left: 1.5rem;
