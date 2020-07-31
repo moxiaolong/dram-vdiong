@@ -117,7 +117,7 @@ module.exports = {
 
         //音乐播放器
         [require.resolve('./plugins/vuepress-plugin-aplayer')],
-        [require('./plugins/live2d')],
+        // [require.resolve('./plugins/live2d')],
 
 
         [
@@ -216,7 +216,7 @@ module.exports = {
                 }
             }
         ]
-    ],
+    ]
 // configureWebpack: {
 //   //webpack别名 如![Image from alias](~@alias/image.png)
 //   resolve: {
@@ -227,39 +227,39 @@ module.exports = {
 // }
 
 
-    configureWebpack: () => {
-        const NODE_ENV = process.env.NODE_ENV;
-        // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-
-        //判断是否是生产环境
-        if (NODE_ENV === 'production') {
-            return {
-                output: {
-                    publicPath: 'https://cdn.jsdelivr.net/gh/moxiaolong/moxiaolong.github.io/'
-                },
-                resolve: {
-                    //配置路径别名
-                    alias: {
-                        'public': path.resolve(__dirname, './public')
-                    }
-                }
-            }
-        } else {
-            return {
-                devtool: '#cheap-module-eval-source-map',
-                resolve: {
-                    //配置路径别名
-                    alias: {
-                        'public': path.resolve(__dirname, './public')
-                    }
-                },
-                // plugins: [
-                //     new BundleAnalyzerPlugin()
-                //     // ...
-                // ]
-            }
-        }
-    }
+    // configureWebpack: () => {
+    //     const NODE_ENV = process.env.NODE_ENV;
+    //     // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+    //
+    //     //判断是否是生产环境
+    //     if (NODE_ENV === 'production') {
+    //         return {
+    //             output: {
+    //                 publicPath: 'https://cdn.jsdelivr.net/gh/moxiaolong/moxiaolong.github.io/'
+    //             },
+    //             resolve: {
+    //                 //配置路径别名
+    //                 alias: {
+    //                     'public': path.resolve(__dirname, './public')
+    //                 }
+    //             }
+    //         }
+    //     } else {
+    //         return {
+    //             devtool: '#cheap-module-eval-source-map',
+    //             resolve: {
+    //                 //配置路径别名
+    //                 alias: {
+    //                     'public': path.resolve(__dirname, './public')
+    //                 }
+    //             },
+    //             // plugins: [
+    //             //     new BundleAnalyzerPlugin()
+    //             //     // ...
+    //             // ]
+    //         }
+    //     }
+    // }
 
 
 }

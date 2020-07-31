@@ -3,8 +3,8 @@
  * https://github.com/stevenjoezhang/live2d-widget
  */
 const live2D = require("./live2d.min.js")
-const json = require("./waifu-tips.json")
-
+// const json = require("./waifu-tips.json")
+const json ={}
 function loadWidget(config) {
     let {apiPath, cdnPath} = config;
     let useCDN = false, modelList;
