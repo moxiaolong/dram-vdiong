@@ -14,11 +14,11 @@
                 v-show="showCommentBut"
                 @click="scrollToComment"
         />
-        <div
-                title="音乐控件开关"
-                class="button blur music-switch fa fa-music"
-                @click="musicClick"
-        />
+<!--        <div-->
+<!--                title="音乐控件开关"-->
+<!--                class="button blur music-switch fa fa-music"-->
+<!--                @click="musicClick"-->
+<!--        />-->
         <div
                 title="主题模式"
                 class="button blur theme-mode-but iconfont icon-zhuti"
@@ -136,16 +136,16 @@
             }
         },
         methods: {
-            musicClick() {
-                if (document.getElementsByClassName("aplayer-body")[0].style.display === ""
-                ) {
-                    document.getElementsByClassName("aplayer-body")[0].style.display = "block";
-                } else {
-                    document.getElementsByClassName("aplayer-body")[0].style.display = "";
-                }
-
-
-            },
+            // musicClick() {
+            //     if (document.getElementsByClassName("aplayer-body")[0].style.display === ""
+            //     ) {
+            //         document.getElementsByClassName("aplayer-body")[0].style.display = "block";
+            //     } else {
+            //         document.getElementsByClassName("aplayer-body")[0].style.display = "";
+            //     }
+            //
+            //
+            // },
             toggleMode(key) {
                 this.currentMode = key
                 this.$emit('toggle-theme-mode', key)
