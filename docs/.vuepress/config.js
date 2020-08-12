@@ -251,11 +251,7 @@ module.exports = {
                     alias: {
                         'public': path.resolve(__dirname, './public')
                     }
-                },
-                // plugins: [
-                //     new BundleAnalyzerPlugin()
-                //     // ...
-                // ]
+                }
             }
         }
     }
