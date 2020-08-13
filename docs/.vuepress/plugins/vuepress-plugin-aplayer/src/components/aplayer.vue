@@ -24,6 +24,6 @@
     }
 </script>
 
-<style scoped>
+<style  scoped>
     @import 'APlayer.min.css';
 </style>
