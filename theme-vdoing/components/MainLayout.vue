@@ -11,7 +11,7 @@
 </template>
 <style lang="stylus">
 .main-wrapper
-  margin 2rem auto 0 auto
+  margin 1.5rem auto 0 auto
   max-width $homePageWidth
   padding 0 .9rem
   box-sizing border-box
@@ -25,11 +25,6 @@
       margin-bottom .9rem
     .home-content
       padding 1rem 1.5rem 0
-    .card-box
-      transition 0.5s ease-in-out
-      cursor pointer
-    .card-box:hover
-      box-shadow 0 0 20px 0 rgba(0,0,0,0.19)
   .main-right
     >* 
       width 265px
@@ -39,7 +34,6 @@
     .card-box
       margin 0 0 .9rem .9rem
       padding .95rem
-
 
 // 719px以下
 @media (max-width: $MQMobile) 

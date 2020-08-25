@@ -47,7 +47,7 @@ export default {
 
 .right-menu-wrapper
   width $rightMenuWidth
-  float right
+  float right 
   margin-right -($rightMenuWidth + 60px)
   position sticky
   top 0
@@ -66,7 +66,7 @@ export default {
       overflow-y auto
     .right-menu-item
       padding 4px 15px
-      border-left .2rem solid var(--borderColor)
+      border-left .15rem solid var(--borderColor)
       &.level3
         padding-left 28px
       &.active
@@ -82,7 +82,7 @@ export default {
         &:hover
           color $accentColor
 
-.have-body-img
+.have-body-img 
   .right-menu-wrapper
     .right-menu-margin
       padding .3rem 0

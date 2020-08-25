@@ -80,23 +80,48 @@ module.exports = (options, ctx) => {
       ['container', {
         type: 'tip',
         defaultTitle: {
-          '/': 'TIP',
-          '/zh/': '提示'
+          '/': '提示',
+          '/en/': 'TIP'
         }
       }],
       ['container', {
         type: 'warning',
         defaultTitle: {
-          '/': 'WARNING',
-          '/zh/': '注意'
+          '/': '注意',
+          '/en/': 'WARNING'
         }
       }],
       ['container', {
         type: 'danger',
         defaultTitle: {
-          '/': 'WARNING',
-          '/zh/': '警告'
+          '/': '警告',
+          '/en/': 'WARNING'
         }
+      }],
+      ['container', {
+        type: 'right',
+        defaultTitle: ''
+      }],
+      ['container', {
+        type: 'theorem',
+        before: info => `<div class="custom-block theorem"><p class="title">${info}</p>`,
+        after: '</div>'
+      }],
+      ['container', {
+        type: 'details',
+        before: info => `<details class="custom-block details">${info ? `<summary>${info}</summary>` : ''}\n`,
+        after: () => '</details>\n',
+        defaultTitle: {
+          '/': '点击查看',
+          '/en/': 'DETAILS'
+        }
+      }],
+
+      // 内容居中容器
+      ['container', {
+        type: 'center',
+        before: info => `<div class="center-container">`,
+        after: () => '</div>'
       }],
 
       // 卡片列表
@@ -193,7 +218,7 @@ function getCardListDOM(dataList, row) {
   dataList.forEach(item => {
     listDOM += `
       <${item.link ? 'a href="' + item.link +'" target="_blank"' : 'span' } class="card-item ${ row ? 'row-' + row : '' }"
-         style="${ item.bgColor ? 'background-color:' + item.bgColor + ';': '' }${ item.textColor ? 'color:' + item.textColor + ';': '' }"
+         style="${ item.bgColor ? 'background-color:' + item.bgColor + ';--randomColor:'+ item.bgColor +';': '--randomColor: var(--bodyBg);' }${ item.textColor ? 'color:' + item.textColor + ';': '' }"
       >
         ${ item.avatar ? '<img src="'+ item.avatar +'" class="no-zoom">' : '' }
         <div>

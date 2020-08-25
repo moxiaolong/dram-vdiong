@@ -39,7 +39,7 @@ module.exports = [
   // {text: '关于', link: '/about/'},
   {
     text: '收藏',
-    link: '/pages/favorites/url/',
+    link: '/favorites/',
     // items: [
     //   {text: '网站', link: '/pages/url/'},
     //   {text: '资源', link: '/pages/resource/'}

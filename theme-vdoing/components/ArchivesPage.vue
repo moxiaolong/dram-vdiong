@@ -106,7 +106,7 @@ export default {
     @extend $vdoing-wrapper
     position relative
     @media (min-width $contentWidth + 80)
-      margin-top 2rem!important
+      margin-top 1.5rem!important
     ul,li
       margin 0
       padding 0
@@ -147,6 +147,10 @@ export default {
       text-align center
       margin-top 1rem
       opacity .5
+
+.theme-mode-dark .archives-page .theme-vdoing-wrapper li a:hover,
+.theme-mode-read .archives-page .theme-vdoing-wrapper li a:hover
+  background var(--customBlockBg)
 
 
 .hide-navbar

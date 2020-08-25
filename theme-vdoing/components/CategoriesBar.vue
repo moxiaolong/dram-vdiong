@@ -59,7 +59,7 @@ export default {
     margin-top .6rem
     a
       display block
-      padding .45rem .3rem
+      padding 8px .3rem 7px .3rem
       color var(--textColor)
       opacity .8
       font-size .95rem
@@ -77,19 +77,19 @@ export default {
         color $accentColor
       &:hover
         color $accentColor
-        padding-left .4rem
+        padding-left .6rem
         span 
           opacity .8
       span 
         float right 
         background-color var(--textColor)
         color var(--mainBg)
-        border-radius 2px
-        padding 0 .1rem
+        border-radius 8px
+        padding 0 .13rem
         min-width 1rem
         height 1rem
         line-height 1rem
-        font-size .65rem
+        font-size .6rem
         text-align center
         opacity .6
         transition opacity .3s
