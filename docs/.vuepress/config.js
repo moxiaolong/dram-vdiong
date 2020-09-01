@@ -2,12 +2,27 @@ const nav = require('./config/nav.js');
 const path = require('path');
 
 module.exports = {
+
+    // locales: {
+    //     // 键名是该语言所属的子路径
+    //     // 作为特例，默认语言可以使用 '/' 作为其路径。
+    //     '/': {
+    //         lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
+    //         title: 'Dra-M',
+    //         description: '一些技术，一些随想，一些资源收藏。'
+    //     }
+    // },
+
+    lang: 'zh-CN',
     title: "Dra-M",
     description: '一些技术，一些随想，一些资源收藏。', // 描述,以 <meta> 标签渲染到页面html中
     // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/'
     head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
         ['link', {rel: 'icon', href: '/img/logo.png'}], //favicons，资源放在public文件夹
-        ['link', {rel: 'stylesheet', href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}], //favicons，资源放在public文件夹
+        ['link', {
+            rel: 'stylesheet',
+            href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+        }], //favicons，资源放在public文件夹
 
         ['meta', {name: 'keywords', content: '后端技术,DragonMo,Dra-M,莫小龙'}],
         ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
@@ -226,7 +241,7 @@ module.exports = {
 // }
 
 
-    configureWebpack: (config,isServer) => {
+    configureWebpack: (config, isServer) => {
         const NODE_ENV = process.env.NODE_ENV;
         // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -258,3 +273,4 @@ module.exports = {
 
 
 }
+
