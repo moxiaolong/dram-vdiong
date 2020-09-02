@@ -8,11 +8,11 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-            title: 'Dra-M',
-            description: '一些技术，一些随想，一些资源收藏。'
+            // title: 'Dra-M',
+            // description: '一些技术，一些随想，一些资源收藏。'
         }
     },
-    lang: 'zh-CN',
+    // lang: 'zh-CN',
     title: "Dra-M",
     description: '一些技术，一些随想，一些资源收藏。', // 描述,以 <meta> 标签渲染到页面html中
     // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/'
