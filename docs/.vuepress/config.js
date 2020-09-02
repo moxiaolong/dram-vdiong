@@ -12,7 +12,7 @@ module.exports = {
             description: '一些技术，一些随想，一些资源收藏。'
         }
     },
-
+    lang: 'zh-CN',
     title: "Dra-M",
     description: '一些技术，一些随想，一些资源收藏。', // 描述,以 <meta> 标签渲染到页面html中
     // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/'
