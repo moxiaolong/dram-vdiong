@@ -35,6 +35,11 @@
                     order: "random",
                     audio: [
                         {
+                            name: '回答',
+                            artist: '南京市民李先生',
+                            url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODg5T3B4WEpDeUQ4NkpodUE/ZT1mWnlRMmw=.mp3',
+                            cover: '../../music/热河.jpg',
+                        }, {
                             name: '热河2015现场版',
                             artist: '南京市民李先生',
                             url: 'https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBc2w4OEN4aU5uZ3BqODhtMnpDbVR1RFdDVXN2TXc/ZT1iT2RjY3M=.mp3',
