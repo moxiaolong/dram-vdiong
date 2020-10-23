@@ -3,19 +3,6 @@
 
     <transition-group tag="div" name="post">
       <div class="post card-box" :class="item.frontmatter.sticky && 'iconfont icon-zhiding'" v-for="item in sortPosts" :key="item.key">
-
-      <div v-if="key&3===0">
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-format="fluid"
-             data-ad-layout-key="-gw-3+1f-3d+2z"
-             data-ad-client="ca-pub-8621788234752924"
-             data-ad-slot="7351544700"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-
         <div class="title-wrapper">
           <h2>
             <router-link :to="item.path">{{item.title}}</router-link>
