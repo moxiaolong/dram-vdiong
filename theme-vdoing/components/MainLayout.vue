@@ -5,6 +5,16 @@
     </div>
 
     <div class="main-right">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8621788234752924"
+           data-ad-slot="9814056513"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
       <slot name="mainRight" />
     </div>
   </div>
@@ -26,7 +36,7 @@
     .home-content
       padding 1rem 1.5rem 0
   .main-right
-    >* 
+    >*
       width 265px
       box-sizing border-box
       @media (max-width 900px)
@@ -36,7 +46,7 @@
       padding .95rem
 
 // 719px以下
-@media (max-width: $MQMobile) 
+@media (max-width: $MQMobile)
   .main-wrapper
     margin .9rem 0
     padding 0

@@ -2,9 +2,9 @@
   <div>
     <main class="page">
       <slot name="top" />
-      
+
       <div :class="`theme-vdoing-wrapper ${bgStyle}`" >
-        
+
         <ArticleInfo v-if="isArticle()" />
         <component class="theme-vdoing-content" v-if="pageComponent" :is="pageComponent" />
 
@@ -16,11 +16,23 @@
           </h1>
           <Content class="theme-vdoing-content" />
         </div>
-        
+
 
         <PageEdit />
         <PageNav v-bind="{ sidebarItems }" />
       </div>
+
+
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8621788234752924"
+           data-ad-slot="7043271566"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
 
       <UpdateArticle
         :length="3"
@@ -30,7 +42,7 @@
 
       <slot name="bottom" />
     </main>
-  
+
   </div>
 </template>
 
@@ -62,7 +74,7 @@ export default {
       return contentBgStyle ? 'bg-style-' + contentBgStyle : ''
     },
     isShowUpdateBar() {
-      return this.updateBarConfig && this.updateBarConfig.showToArticle === false ? false : true 
+      return this.updateBarConfig && this.updateBarConfig.showToArticle === false ? false : true
     },
     showTitle() {
       return !this.$frontmatter.pageComponent
@@ -102,7 +114,7 @@ export default {
     margin-bottom -0.2rem
     max-width 2.2rem
     max-height 2.2rem
-  
+
 
 .theme-vdoing-wrapper
   --linesColor: rgba(50, 0, 0, 0.05)
@@ -136,7 +148,7 @@ export default {
  */
 @media (min-width: 720px) and (max-width: 1279px)
   .have-rightmenu
-    .page 
+    .page
       padding-right .8rem!important
 
 @media (max-width: 1279px)

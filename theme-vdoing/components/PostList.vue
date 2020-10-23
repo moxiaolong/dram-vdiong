@@ -3,6 +3,19 @@
 
     <transition-group tag="div" name="post">
       <div class="post card-box" :class="item.frontmatter.sticky && 'iconfont icon-zhiding'" v-for="item in sortPosts" :key="item.key">
+
+      <div v-if="key&3===0">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-format="fluid"
+             data-ad-layout-key="-gw-3+1f-3d+2z"
+             data-ad-client="ca-pub-8621788234752924"
+             data-ad-slot="7351544700"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
         <div class="title-wrapper">
           <h2>
             <router-link :to="item.path">{{item.title}}</router-link>
@@ -49,7 +62,7 @@
 
 <script>
 import encodeMixin from '../mixins/encodeUrl'
-  
+
 export default {
   mixins: [encodeMixin],
   props: {
@@ -108,7 +121,7 @@ export default {
     setPosts() {
       const currentPage = this.currentPage
       const perPage = this.perPage
-      
+
       let posts = []
       if (this.category) {
         posts = this.$groupPosts.categories[this.category]
@@ -160,7 +173,7 @@ export default {
         font-size 1.4rem
         border none
         a
-          @media (max-width: $MQMobile) 
+          @media (max-width: $MQMobile)
             font-weight 400
       .article-info
         > a, > span
@@ -192,11 +205,11 @@ export default {
           max-width 100%!important
           margin 0 auto
       .readmore
-        float right 
+        float right
         margin-right 1rem
         line-height 1rem
         &::before
-          float right 
+          float right
           font-size .8rem
           margin .1rem 0 0 .2rem
 </style>
