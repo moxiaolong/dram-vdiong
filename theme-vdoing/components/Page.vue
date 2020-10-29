@@ -31,26 +31,16 @@
 
       <!-- 广告 -->
       <div style="padding:0;max-width: 940px;width: 100%;" class="ad">
-        <amp-ad width="100vw" height="320"
-                type="adsense"
-                data-ad-client="ca-pub-8621788234752924"
-                data-ad-slot="7043271566"
-                data-auto-format="rspv"
-                data-full-width="">
-          <div overflow=""></div>
-        </amp-ad>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-8621788234752924"
+             data-ad-slot="7043271566"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
-<!--      <div style="padding:0;max-width: 940px;width: 100%;" class="ad">-->
-<!--        <ins class="adsbygoogle"-->
-<!--             style="display:block"-->
-<!--             data-ad-client="ca-pub-8621788234752924"-->
-<!--             data-ad-slot="7043271566"-->
-<!--             data-ad-format="auto"-->
-<!--             data-full-width-responsive="true"></ins>-->
-<!--        <script>-->
-<!--            (adsbygoogle = window.adsbygoogle || []).push({});-->
-<!--        </script>-->
-<!--      </div>-->
       <slot name="bottom"/>
     </main>
 
