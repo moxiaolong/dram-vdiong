@@ -30,7 +30,7 @@
       />
 
       <!-- 广告 -->
-      <div class="ad">
+      <div style="padding:0;" class="ad">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8621788234752924"
