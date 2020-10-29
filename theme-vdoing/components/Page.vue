@@ -30,7 +30,7 @@
       />
 
       <!-- 广告 -->
-      <div style="padding:0;max-width: 940px;" class="ad">
+      <div style="padding:0;max-width: 940px;width: 100%;" class="ad">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8621788234752924"
