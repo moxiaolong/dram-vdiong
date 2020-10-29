@@ -26,12 +26,19 @@ module.exports = {
         ['meta', {name: 'keywords', content: '后端技术,DragonMo,Dra-M,莫小龙'}],
         ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
         ['meta', {name: 'theme-color', content: '#7b074b'}], // 移动浏览器主题颜色
-        ['script', {
-            'data-ad-client': 'ca-pub-8621788234752924',
-            async: true,
-            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
-        }], // 移动浏览器主题颜色
+        // ['script', {
+        //     'data-ad-client': 'ca-pub-8621788234752924',
+        //     async: true,
+        //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+        // }],
+        //谷歌广告
 
+        //<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+        ['script', {
+            'custom-element': 'amp-ad',
+            async: true,
+            src: 'https://cdn.ampproject.org/v0/amp-ad-0.1.js'
+        }], // 广告 AMP
 
         // 不蒜子访问量统计 (主题暂未使用到)
         // ['script', { src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async: 'async'}]
