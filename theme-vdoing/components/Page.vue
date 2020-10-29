@@ -23,13 +23,14 @@
       </div>
 
       <UpdateArticle
+
               :length="3"
               :moreArticle="updateBarConfig && updateBarConfig.moreArticle"
               v-if="isShowUpdateBar"
       />
 
       <!-- 广告 -->
-      <div>
+      <div class="ad">
         <ins class="adsbygoogle"
              style="display:block"
              data-ad-client="ca-pub-8621788234752924"
@@ -96,6 +97,11 @@
 
 <style lang="stylus">
   @require '../styles/wrapper.styl'
+
+  .ad
+    box-shadow 0 1px 2px 0 rgba(0, 0, 0, .1);
+    margin-bottom: 1rem;
+    max-width: 860px;
 
   .page
     padding-bottom 2rem
