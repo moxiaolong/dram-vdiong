@@ -18,10 +18,10 @@ module.exports = {
     // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/'
     head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
         ['link', {rel: 'icon', href: '/img/logo.png'}], //favicons，资源放在public文件夹
-        ['link', {
-            rel: 'stylesheet',
-            href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
-        }], //favicons，资源放在public文件夹
+        // ['link', {
+        //     rel: 'stylesheet',
+        //     href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+        // }], //favicons，资源放在public文件夹
 
         ['meta', {name: 'keywords', content: '后端技术,DragonMo,Dra-M,莫小龙'}],
         ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证

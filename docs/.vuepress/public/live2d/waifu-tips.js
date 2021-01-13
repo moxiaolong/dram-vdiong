@@ -267,7 +267,7 @@ function initWidget(config, apiPath = "/") {
     }
     //style="opacity: 0;display: none;"
     document.getElementsByClassName("theme-mode-but")[0].insertAdjacentHTML(
-        "beforeBegin", `<div style="display: none;opacity: 0" title="看板娘" id="waifu-toggle" class="button blur fa fa-venus">
+        "beforeBegin", `<div style="display: none;opacity: 0" title="看板娘" id="waifu-toggle" class="button blur iconfont icon-nv">
 			
 		</div>`
     );

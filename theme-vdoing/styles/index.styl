@@ -1,5 +1,6 @@
 // 引入字体图标
 @import '//at.alicdn.com/t/font_1678482_ggaf73aw0oe.css'
+@import '//at.alicdn.com/t/font_1879460_9i07b1auows.css'
 
 @require './config'
 @require './code'
@@ -24,31 +25,37 @@ body
   background var(--bodyBg)
 
 // 去掉黄色边框
-a,input,button
-  outline: none; -webkit-tap-highlight-color: rgba(255, 255, 255, 0); -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+a, input, button
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+
 // 滚动条样式
 @media (min-width: $MQMobile)
   ::-webkit-scrollbar
-    width:6px;
-    height:5px;
+    width: 6px;
+    height: 5px;
+
   ::-webkit-scrollbar-track-piece
-    background-color:rgba(0,0,0,.15)
-    -webkit-border-radius:3px
+    background-color: rgba(0, 0, 0, .15)
+    -webkit-border-radius: 3px
+
   ::-webkit-scrollbar-thumb:vertical
-    height:5px;
-    background-color:rgba(0,0,0,.28)
-    -webkit-border-radius:3px
+    height: 5px;
+    background-color: rgba(0, 0, 0, .28)
+    -webkit-border-radius: 3px
+
   ::-webkit-scrollbar-thumb:horizontal
-    width:5px;
-    background-color:rgba(0,0,0,.28)
-    -webkit-border-radius:3px
+    width: 5px;
+    background-color: rgba(0, 0, 0, .28)
+    -webkit-border-radius: 3px
 
 
 .card-box // 卡片
   border-radius 5px
   background var(--mainBg)
-  box-shadow 0 1px 2px 0 rgba(0,0,0,.1)
-  
+  box-shadow 0 1px 2px 0 rgba(0, 0, 0, .1)
+
 
 .blur // 模糊滤镜
   backdrop-filter saturate(200%) blur(20px)
@@ -57,6 +64,7 @@ a,input,button
   min-height calc(100vh - 3.6rem)
   padding-top $navbarHeight
   padding-bottom .9rem
+
   .theme-vdoing-wrapper
     margin 0 auto
 
@@ -67,8 +75,7 @@ body .search-box
     color var(--textColor)
     border 1px solid var(--borderColor, #ccc)
     @media (max-width: $MQNarrow)
-       border-color transparent
-
+      border-color transparent
 
 
 .page
@@ -84,7 +91,7 @@ body .search-box
   height $navbarHeight
   background-color var(--blurBg)
   box-sizing border-box
-  box-shadow 0 2px 5px rgba(0,0,0,.06)
+  box-shadow 0 2px 5px rgba(0, 0, 0, .06)
 
 .sidebar-mask
   position fixed
@@ -119,7 +126,6 @@ body .search-box
   @extend $wrapper
   > *:first-child
     // margin-top $navbarHeight // 内容第一个元素的top距离
-
   a:hover
     text-decoration underline
 
@@ -157,7 +163,7 @@ kbd
 blockquote
   font-size 1rem
   opacity .75
-  border-left .2rem solid rgba(100,100,100,.3)
+  border-left .2rem solid rgba(100, 100, 100, .3)
   margin 1rem 0
   padding .25rem 0 .25rem 1rem
 
@@ -191,15 +197,17 @@ h1, h2, h3, h4, h5, h6
 
 
 // 没有h1标签时
-p,pre,.custom-block
+p, pre, .custom-block
   {$contentClass}:not(.custom) > &
-      &:first-child
-        margin-top 2rem
-        
+    &:first-child
+      margin-top 2rem
+
 
 h1
   font-size 1.8rem
+
   {$contentClass}:not(.custom) > & // 页面内容的首个h1标签隐藏
+
     &:first-child
       display none
 
@@ -244,11 +252,12 @@ tr
   border-top 1px solid var(--borderColor)
 
   &:nth-child(2n)
-    background-color rgba(150,150,150,0.1)
+    background-color rgba(150, 150, 150, 0.1)
 
 th, td
   border 1px solid var(--borderColor)
   padding .6em 1em
+
   a
     word-break break-all
 
@@ -256,6 +265,7 @@ th, td
   // background var(--mainBg)
   color var(--textColor)
   min-height 100vh
+
   &.sidebar-open
     .sidebar-mask
       display: block
