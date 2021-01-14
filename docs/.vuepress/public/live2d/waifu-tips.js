@@ -1,6 +1,7 @@
 /*
  * Live2D Widget
  * https://github.com/stevenjoezhang/live2d-widget
+ * //at.alicdn.com/t/font_1879460_ajxs43pbfyc.css
  */
 
 function loadWidget(config) {
@@ -19,9 +20,9 @@ function loadWidget(config) {
 			<div id="waifu-tips"></div>
 			<canvas id="live2d" width="240" height="240"></canvas>
 			<div id="waifu-tool">
-				<span class="fa fa-lg fa-times"></span>
-				<span class="fa fa-lg fa-street-view"></span>
-				<span class="fa fa-lg fa-paper-plane"></span>
+				<span class="iconfont icon-guanbi"></span>
+				<span class="iconfont icon-huanfu"></span>
+				<span class="iconfont icon-feiji"></span>
 				
 			</div>
 		</div>`);
@@ -55,7 +56,7 @@ function loadWidget(config) {
 
     (function registerEventListener() {
         // t.querySelector("#waifu-tool .fa-comment").addEventListener("click", showHitokoto);
-        document.querySelector("#waifu-tool .fa-paper-plane").addEventListener("click", () => {
+        document.querySelector("#waifu-tool .icon-feiji").addEventListener("click", () => {
             if (window.Asteroids) {
                 if (!window.ASTEROIDSPLAYERS) window.ASTEROIDSPLAYERS = [];
                 window.ASTEROIDSPLAYERS.push(new Asteroids());
@@ -66,7 +67,7 @@ function loadWidget(config) {
             }
         });
         // document.querySelector("#waifu-tool .fa-user-circle").addEventListener("click", loadOtherModel);
-        document.querySelector("#waifu-tool .fa-street-view").addEventListener("click", loadRandModel);
+        document.querySelector("#waifu-tool .icon-huanfu").addEventListener("click", loadRandModel);
         // t.querySelector("#waifu-tool .fa-camera-retro").addEventListener("click", () => {
         // 	showMessage("照好了嘛，是不是很可爱呢？", 6000, 9);
         // 	Live2D.captureName = "photo.png";
@@ -75,7 +76,7 @@ function loadWidget(config) {
         // t.querySelector("#waifu-tool .fa-info-circle").addEventListener("click", () => {
         // 	open("https://github.com/stevenjoezhang/live2d-widget");
         // });
-        document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
+        document.querySelector("#waifu-tool .icon-guanbi").addEventListener("click", () => {
             localStorage.removeItem("waifu-display");
             showMessage("愿你有一天能与重要的人重逢。", 2000, 11);
             document.getElementById("waifu").style.bottom = "-500px";
