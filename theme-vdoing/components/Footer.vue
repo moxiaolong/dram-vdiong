@@ -16,8 +16,9 @@
 
     <script src="../../live2d/autoload.js"></script>
     <!--Vdoing主题遵循MIT协议，完全开源且免费。如果您对主题的修改并不大，希望您保留主题的链接。-->
-    <a style="font-weight:normal" href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" ref="nofollow noopener"
-                title="本站主题">Vdoing</a>
+    <a style="font-weight:normal" href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"
+       ref="nofollow noopener"
+       title="本站主题">Vdoing</a>
     |
 
     <a style="font-weight:normal" href="http://www.beian.miit.gov.cn" target="_blank" ref="nofollow noopener">冀ICP备2021002204号</a>
@@ -25,6 +26,7 @@
     <template v-if="footer">
       | © {{ new Date().getFullYear() }} <span v-html="footer.copyrightInfo"></span>
     </template>
+    <span style="display: none" id="busuanzi_value_site_pv"></span>
   </div>
 </template>
 

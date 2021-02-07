@@ -34,7 +34,7 @@ module.exports = {
 
 
         // 不蒜子访问量统计 (主题暂未使用到)
-        // ['script', { src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async: 'async'}]
+        ['script', {src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js', async: 'async'}]
 
     ],
     markdown: {
