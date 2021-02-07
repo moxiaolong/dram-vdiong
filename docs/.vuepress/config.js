@@ -130,13 +130,13 @@ module.exports = {
         },
         footer: { // 页脚信息
             createYear: 2019, // 博客创建年份
-            copyrightInfo: '莫小龙', // 博客版权信息，支持a标签
+            copyrightInfo: 'Dra-M', // 博客版权信息，支持a标签
         }
     },
     plugins: [ // 插件
 
         //音乐播放器
-        [require.resolve('./plugins/vuepress-plugin-aplayer')],
+        // [require.resolve('./plugins/vuepress-plugin-aplayer')],
 
 
         [
