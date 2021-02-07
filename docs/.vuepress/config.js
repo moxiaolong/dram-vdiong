@@ -199,33 +199,33 @@ module.exports = {
                 hm: 'a337e2eccf897d11d69e4e070df5a88f'
             }
         ],
-        [
-            'vuepress-plugin-comment', // 评论
-            // {
-            //   choosen: 'valine',
-            //   options: {
-            //     el: '#valine-vuepress-comment',
-            //     appId: 'Your own appId',
-            //     appKey: 'Your own appKey'
-            //   }
-            // }
-            {
-                choosen: 'gitalk',
-                options: {
-                    clientID: '83aaa6294c1c2c30b218',
-                    clientSecret: '66a55feb8aaf1577eacbf94282e2d48e21e469ef',
-                    repo: 'Dra-M-utterance', // GitHub 仓库
-                    owner: 'moxiaolong', // GitHub仓库所有者
-                    admin: ['moxiaolong'], // 对仓库有写权限的人
-                    // distractionFreeMode: true,
-                    pagerDirection: 'last', // 'first'正序 | 'last'倒序
-                    id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-                    title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-                    labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-                    body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
-                }
-            }
-        ],
+        // [
+        //     'vuepress-plugin-comment', // 评论
+        //     // {
+        //     //   choosen: 'valine',
+        //     //   options: {
+        //     //     el: '#valine-vuepress-comment',
+        //     //     appId: 'Your own appId',
+        //     //     appKey: 'Your own appKey'
+        //     //   }
+        //     // }
+        //     {
+        //         choosen: 'gitalk',
+        //         options: {
+        //             clientID: '83aaa6294c1c2c30b218',
+        //             clientSecret: '66a55feb8aaf1577eacbf94282e2d48e21e469ef',
+        //             repo: 'Dra-M-utterance', // GitHub 仓库
+        //             owner: 'moxiaolong', // GitHub仓库所有者
+        //             admin: ['moxiaolong'], // 对仓库有写权限的人
+        //             // distractionFreeMode: true,
+        //             pagerDirection: 'last', // 'first'正序 | 'last'倒序
+        //             id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+        //             title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+        //             labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+        //             body: "页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+        //         }
+        //     }
+        // ],
         [
             '@vuepress/last-updated', // "上次更新"时间格式
             {
