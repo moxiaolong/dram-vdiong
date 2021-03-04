@@ -8,8 +8,6 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
             lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-            // title: 'Dra-M',
-            // description: '一些技术，一些随想，一些资源收藏。'
         }
     },
     // lang: 'zh-CN',
@@ -41,10 +39,38 @@ module.exports = {
         lineNumbers: true // 代码行号
     },
 
-    // theme: 'vdoing', // 使用依赖包主题
-    theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+    theme: 'vdoing', // 使用依赖包主题
+    // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
+
+
 
     themeConfig: { // 主题配置
+        htmlModules: {
+           homeSidebarB: "<ins class=\"adsbygoogle\"\n" +
+               "     style=\"display:block\"\n" +
+               "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
+               "     data-ad-slot=\"9814056513\"\n" +
+               "     data-ad-format=\"auto\"\n" +
+               "     data-full-width-responsive=\"true\"></ins>\n" +
+               "<script>\n" +
+               "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+               "</script>", // 首页侧边栏底部
+          //  sidebarT: htmlString, //全局左侧边栏顶部
+           // sidebarB: htmlString, //全局左侧边栏底部
+           // pageT: htmlString, //全局页面顶部
+           pageB: "<ins class=\"adsbygoogle\"\n" +
+               "     style=\"display:block\"\n" +
+               "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
+               "     data-ad-slot=\"7043271566\"\n" +
+               "     data-ad-format=\"auto\"\n" +
+               "     data-full-width-responsive=\"true\"></ins>\n" +
+               "<script>\n" +
+               "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+               "</script>", //全局页面底部
+           // windowLB: htmlString, //全局窗口左下角②
+           // windowRB: "<script src='/live2d/autoload.js'></script>", //全局窗口右下角②
+        },
+
         nav,
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
         logo: '/img/logo.png', // 导航栏logo
@@ -130,7 +156,7 @@ module.exports = {
         },
         footer: { // 页脚信息
             createYear: 2019, // 博客创建年份
-            copyrightInfo: 'Dra-M', // 博客版权信息，支持a标签
+            copyrightInfo: 'Dra-M | <a href="http://www.beian.miit.gov.cn" target="_blank" style="font-weight:normal">冀ICP备2021002204号</a> ', // 博客版权信息，支持a标签
         }
     },
     plugins: [ // 插件
@@ -236,14 +262,7 @@ module.exports = {
             }
         ]
     ],
-// configureWebpack: {
-//   //webpack别名 如![Image from alias](~@alias/image.png)
-//   resolve: {
-//     alias: {
-//       '@alias': 'path/to/some/dir'
-//     }
-//   }
-// }
+
 
 
     configureWebpack: (config, isServer) => {
