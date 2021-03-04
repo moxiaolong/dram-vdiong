@@ -46,24 +46,32 @@ module.exports = {
 
     themeConfig: { // 主题配置
         htmlModules: {
-           homeSidebarB: "<ins class=\"adsbygoogle\"\n" +
+           // homeSidebarB: "<ins class=\"adsbygoogle\"\n" +
+           //     "     style=\"display:block\"\n" +
+           //     "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
+           //     "     data-ad-slot=\"9814056513\"\n" +
+           //     "     data-ad-format=\"auto\"\n" +
+           //     "     data-full-width-responsive=\"true\"></ins>\n" +
+           //     "<script>\n" +
+           //     "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+           //     "</script>", // 首页侧边栏底部
+          //  sidebarT: htmlString, //全局左侧边栏顶部
+           sidebarB: "<ins class=\"adsbygoogle\"\n" +
                "     style=\"display:block\"\n" +
                "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-               "     data-ad-slot=\"9814056513\"\n" +
+               "     data-ad-slot=\"8498052873\"\n" +
                "     data-ad-format=\"auto\"\n" +
                "     data-full-width-responsive=\"true\"></ins>\n" +
                "<script>\n" +
                "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-               "</script>", // 首页侧边栏底部
-          //  sidebarT: htmlString, //全局左侧边栏顶部
-           // sidebarB: htmlString, //全局左侧边栏底部
+               "</script>", //全局左侧边栏底部
            // pageT: htmlString, //全局页面顶部
            pageB: "<ins class=\"adsbygoogle\"\n" +
-               "     style=\"display:block\"\n" +
+               "     style=\"display:block; text-align:center;\"\n" +
+               "     data-ad-layout=\"in-article\"\n" +
+               "     data-ad-format=\"fluid\"\n" +
                "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-               "     data-ad-slot=\"7043271566\"\n" +
-               "     data-ad-format=\"auto\"\n" +
-               "     data-full-width-responsive=\"true\"></ins>\n" +
+               "     data-ad-slot=\"7391471875\"></ins>\n" +
                "<script>\n" +
                "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
                "</script>", //全局页面底部
