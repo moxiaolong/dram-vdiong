@@ -66,7 +66,7 @@ module.exports = {
                "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
                "</script>", //全局左侧边栏底部
            // pageT: htmlString, //全局页面顶部
-           pageB: "<ins class=\"adsbygoogle\"\n" +
+           pageB: "</br><ins class=\"adsbygoogle\"\n" +
                "     style=\"display:block; text-align:center;\"\n" +
                "     data-ad-layout=\"in-article\"\n" +
                "     data-ad-format=\"fluid\"\n" +
