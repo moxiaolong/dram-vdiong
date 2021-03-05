@@ -2,6 +2,7 @@ const nav = require('./config/nav.js');
 const path = require('path');
 
 module.exports = {
+    evergreen: true, //是否不兼容IE
 
     locales: {
         // 键名是该语言所属的子路径
@@ -43,40 +44,39 @@ module.exports = {
     // theme: require.resolve('../../theme-vdoing'), // 使用本地主题
 
 
-
     themeConfig: { // 主题配置
         htmlModules: {
-           // homeSidebarB: "<ins class=\"adsbygoogle\"\n" +
-           //     "     style=\"display:block\"\n" +
-           //     "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-           //     "     data-ad-slot=\"9814056513\"\n" +
-           //     "     data-ad-format=\"auto\"\n" +
-           //     "     data-full-width-responsive=\"true\"></ins>\n" +
-           //     "<script>\n" +
-           //     "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-           //     "</script>", // 首页侧边栏底部
-          //  sidebarT: htmlString, //全局左侧边栏顶部
-           sidebarB: "<ins class=\"adsbygoogle\"\n" +
-               "     style=\"display:block\"\n" +
-               "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-               "     data-ad-slot=\"8498052873\"\n" +
-               "     data-ad-format=\"auto\"\n" +
-               "     data-full-width-responsive=\"true\"></ins>\n" +
-               "<script>\n" +
-               "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-               "</script>", //全局左侧边栏底部
-           // pageT: htmlString, //全局页面顶部
-           pageB: "</br><ins class=\"adsbygoogle\"\n" +
-               "     style=\"display:block; text-align:center;\"\n" +
-               "     data-ad-layout=\"in-article\"\n" +
-               "     data-ad-format=\"fluid\"\n" +
-               "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-               "     data-ad-slot=\"7391471875\"></ins>\n" +
-               "<script>\n" +
-               "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-               "</script>", //全局页面底部
-           // windowLB: htmlString, //全局窗口左下角②
-           // windowRB: "<script src='/live2d/autoload.js'></script>", //全局窗口右下角②
+            // homeSidebarB: "<ins class=\"adsbygoogle\"\n" +
+            //     "     style=\"display:block\"\n" +
+            //     "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
+            //     "     data-ad-slot=\"9814056513\"\n" +
+            //     "     data-ad-format=\"auto\"\n" +
+            //     "     data-full-width-responsive=\"true\"></ins>\n" +
+            //     "<script>\n" +
+            //     "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+            //     "</script>", // 首页侧边栏底部
+            //  sidebarT: htmlString, //全局左侧边栏顶部
+            sidebarB: "<ins class=\"adsbygoogle\"\n" +
+                "     style=\"display:block\"\n" +
+                "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
+                "     data-ad-slot=\"8498052873\"\n" +
+                "     data-ad-format=\"auto\"\n" +
+                "     data-full-width-responsive=\"true\"></ins>\n" +
+                "<script>\n" +
+                "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+                "</script>", //全局左侧边栏底部
+            // pageT: htmlString, //全局页面顶部
+            pageB: "</br><ins class=\"adsbygoogle\"\n" +
+                "     style=\"display:block; text-align:center;\"\n" +
+                "     data-ad-layout=\"in-article\"\n" +
+                "     data-ad-format=\"fluid\"\n" +
+                "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
+                "     data-ad-slot=\"7391471875\"></ins>\n" +
+                "<script>\n" +
+                "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
+                "</script>", //全局页面底部
+            // windowLB: htmlString, //全局窗口左下角②
+            // windowRB: "<script src='/live2d/autoload.js'></script>", //全局窗口右下角②
         },
 
         nav,
@@ -270,7 +270,6 @@ module.exports = {
             }
         ]
     ],
-
 
 
     configureWebpack: (config, isServer) => {
