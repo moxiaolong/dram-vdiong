@@ -40,8 +40,8 @@ jobs: # 工作流
       - name: 'Send mail'
         uses: dawidd6/action-send-mail@master
         with:
-          serveraddress: smtp.exmail.qq.com
-          serverport: 465
+          server_address: smtp.exmail.qq.com
+          server_port: 465
           username: ${{ secrets.MAILUSERNAME }}
           password: ${{ secrets.MAILPASSWORD }}
           subject: dra-m推送完成
