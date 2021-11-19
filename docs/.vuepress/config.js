@@ -164,7 +164,7 @@ module.exports = {
         },
         footer: { // 页脚信息
             createYear: 2019, // 博客创建年份
-            copyrightInfo: 'Dra-M | <a href="http://www.beian.miit.gov.cn" target="_blank" style="font-weight:normal">冀ICP备2021002204号</a> ', // 博客版权信息，支持a标签
+            copyrightInfo: 'Dra-M | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">冀ICP备2021002204号</a> ', // 博客版权信息，支持a标签
         }
     },
     plugins: [ // 插件
