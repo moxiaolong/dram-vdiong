@@ -171,11 +171,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ['script', {
             'data-ad-client': 'ca-pub-8621788234752924',
             async: true,
-            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'
+            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924',
+            crossorigin: "anonymous"
         }] // 移动浏览器主题颜色
 
     ],
-
 
 
     // 插件配置

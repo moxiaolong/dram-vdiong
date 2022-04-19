@@ -73,9 +73,9 @@ const htmlModule: VdoingThemeConfig['htmlModules'] = {
       "</br><ins class=\"adsbygoogle\"\n" +
       "     style=\"display:block; text-align:center;\"\n" +
       "     data-ad-layout=\"in-article\"\n" +
-      "     data-ad-format=\"fluid\"\n" +
+      "     data-ad-format=\"auto\"\n" +
       "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-      "     data-ad-slot=\"7391471875\"></ins>\n" +
+      "     data-ad-slot=\"7043271566\"></ins>\n" +
       "<script>\n" +
       "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
       "</script>",
