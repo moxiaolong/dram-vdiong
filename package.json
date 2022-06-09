@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "dayjs": "^1.9.7",
+    "highlight.js": "^11.5.1",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
     "vuepress": "1.9.5",
@@ -21,10 +22,10 @@
     "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-plugin-fulltext-search": "^2.2.1",
     "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-sitemap": "^2.3.1",
     "vuepress-plugin-thirdparty-search": "^1.0.2",
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.10.4",
-    "yamljs": "^0.3.0",
-    "highlight.js": "^11.5.1"
+    "yamljs": "^0.3.0"
   }
 }
