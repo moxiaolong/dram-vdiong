@@ -166,7 +166,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // }], //favicons，资源放在public文件夹
 
         ['meta', {name: 'keywords', content: '后端技术,DragonMo,Dra-M,莫小龙'}],
-        ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
+        // ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
         ['meta', {name: 'theme-color', content: '#7b074b'}], // 移动浏览器主题颜色
         ['script', {
             'data-ad-client': 'ca-pub-8621788234752924',
