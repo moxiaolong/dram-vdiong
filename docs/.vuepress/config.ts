@@ -51,7 +51,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             }
         ],
         sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-        logo: '/img/logo.png', // 导航栏logo
+        logo: '/img/logo.webp', // 导航栏logo
         repo: 'moxiaolong', // 导航栏右侧生成Github链接
         searchMaxSuggestions: 10, // 搜索结果显示最大数
         lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
@@ -74,33 +74,33 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~ 1.0, 默认0.5
         // titleBadge: false, // 文章标题前的图标是否显示，默认true
         titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
-            '/img/dragon/1.png',
-            '/img/dragon/2.png',
-            '/img/dragon/3.png',
-            '/img/dragon/4.png',
-            '/img/dragon/5.png',
-            '/img/dragon/6.png',
-            '/img/dragon/7.png',
-            '/img/dragon/8.png',
-            '/img/dragon/9.png',
-            '/img/dragon/10.png',
-            '/img/dragon/11.png',
-            '/img/dragon/12.png',
-            '/img/dragon/13.png',
-            '/img/dragon/14.png',
-            '/img/dragon/15.png',
-            '/img/dragon/16.png',
-            '/img/dragon/17.png',
-            '/img/dragon/18.png',
-            '/img/dragon/19.png',
-            '/img/dragon/20.png',
-            '/img/dragon/21.png',
-            '/img/dragon/22.png',
-            '/img/dragon/23.png',
-            '/img/dragon/24.png',
-            '/img/dragon/25.png',
-            '/img/dragon/26.png',
-            '/img/dragon/27.png'
+            '/img/dragon/1.webp',
+            '/img/dragon/2.webp',
+            '/img/dragon/3.webp',
+            '/img/dragon/4.webp',
+            '/img/dragon/5.webp',
+            '/img/dragon/6.webp',
+            '/img/dragon/7.webp',
+            '/img/dragon/8.webp',
+            '/img/dragon/9.webp',
+            '/img/dragon/10.webp',
+            '/img/dragon/11.webp',
+            '/img/dragon/12.webp',
+            '/img/dragon/13.webp',
+            '/img/dragon/14.webp',
+            '/img/dragon/15.webp',
+            '/img/dragon/16.webp',
+            '/img/dragon/17.webp',
+            '/img/dragon/18.webp',
+            '/img/dragon/19.webp',
+            '/img/dragon/20.webp',
+            '/img/dragon/21.webp',
+            '/img/dragon/22.webp',
+            '/img/dragon/23.webp',
+            '/img/dragon/24.webp',
+            '/img/dragon/25.webp',
+            '/img/dragon/26.webp',
+            '/img/dragon/27.webp'
         ],
         // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
@@ -159,7 +159,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
 
     head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-        ['link', {rel: 'icon', href: '/img/logo.png'}], //favicons，资源放在public文件夹
+        ['link', {rel: 'icon', href: '/img/logo.webp'}], //favicons，资源放在public文件夹
         // ['link', {
         //     rel: 'stylesheet',
         //     href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
