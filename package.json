@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
+    "dev_t": "set NODE_OPTIONS=\"--openssl-legacy-provider\" & npm run dev\n",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "editFm": "node utils/editFrontmatter.js",
