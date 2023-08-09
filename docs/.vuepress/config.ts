@@ -35,6 +35,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                 text: '冥思',
                 link: '/idea/'
             },
+            {
+                text: '哲学',
+                link: '/philosophia/'
+            },
 
             {
                 text: '收藏',
