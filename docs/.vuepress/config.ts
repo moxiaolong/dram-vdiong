@@ -173,6 +173,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ['meta', {name: 'keywords', content: '开发技术,哲学,DragonMo,Dra-M,莫小龙'}],
         // ['meta', {name: 'baidu-site-verification', content: '7F55weZDDc'}],// 百度统计博主验证
         ['meta', {name: 'theme-color', content: '#7b074b'}], // 移动浏览器主题颜色
+        //<meta name="viewport" content="width=device-width,initial-scale=1">
+        ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1'}],
         // ['script', {
         //     'data-ad-client': 'ca-pub-8621788234752924',
         //     defer: true,
