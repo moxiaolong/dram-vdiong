@@ -154,7 +154,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // 页脚信息
         footer: { // 页脚信息
             createYear: 2019, // 博客创建年份
-            copyrightInfo: 'Dra-M | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">冀ICP备2021002204号</a> ', // 博客版权信息，支持a标签
+            copyrightInfo: 'Dra-M', // 博客版权信息，支持a标签
+            // copyrightInfo: 'Dra-M | <a href="https://beian.miit.gov.cn/" target="_blank" style="font-weight:normal">冀ICP备2021002204号</a> ', // 博客版权信息，支持a标签
         },
 
         // 自定义hmtl(广告)模块
