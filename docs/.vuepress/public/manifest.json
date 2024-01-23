@@ -1,0 +1,16 @@
+{
+  "name": "Dra-M",
+  "short_name": "Dra-M",
+  "description": "一些技术，一些随想，一些资源收藏。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#7b074b",
+  "icons": [
+    {
+      "src": "/images/logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    }
+  ]
+}

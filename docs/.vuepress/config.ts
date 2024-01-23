@@ -166,6 +166,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
         ['link', {rel: 'icon', href: '/img/logo.webp'}], //favicons，资源放在public文件夹
+        ['link', {rel: 'manifest', href: '/manifest.json'}],
         // ['link', {
         //     rel: 'stylesheet',
         //     href: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
