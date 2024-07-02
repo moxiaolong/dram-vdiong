@@ -21,7 +21,9 @@ import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
  */
 const htmlModule: VdoingThemeConfig['htmlModules'] = {
   homeSidebarB:
-    "<ins class=\"adsbygoogle\"\n" +
+    "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924\"\n" +
+      "     crossorigin=\"anonymous\"></script>" +
+      "<ins class=\"adsbygoogle\"\n" +
                 "     style=\"display:block\"\n" +
                 "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
                 "     data-ad-slot=\"9814056513\"\n" +
@@ -50,6 +52,8 @@ const htmlModule: VdoingThemeConfig['htmlModules'] = {
   //         (adsbygoogle = window.adsbygoogle || []).push({});
   //     </script>`,
   sidebarB:
+      "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924\"\n" +
+      "     crossorigin=\"anonymous\"></script>" +
       "<ins class=\"adsbygoogle\"\n" +
       "     style=\"display:block\"\n" +
       "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
@@ -70,6 +74,8 @@ const htmlModule: VdoingThemeConfig['htmlModules'] = {
   //     </script>`,
   // pageTshowMode: 'article',
   pageB:
+      "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924\"\n" +
+      "     crossorigin=\"anonymous\"></script>" +
       "</br><ins class=\"adsbygoogle\"\n" +
       "     style=\"display:block; text-align:center;\"\n" +
       "     data-ad-layout=\"in-article\"\n" +
