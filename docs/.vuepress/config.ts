@@ -177,11 +177,13 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ['meta', {name: 'theme-color', content: '#7b074b'}], // 移动浏览器主题颜色
         //<meta name="viewport" content="width=device-width,initial-scale=1">
         ['meta', {name: 'viewport', content: 'width=device-width,initial-scale=1'}],
-        // ['script', {
-        //     'data-ad-client': 'ca-pub-8621788234752924',
-        //     defer: true,
-        //     src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924',
-        //     crossorigin: "anonymous"
+        ['script', {
+            'data-ad-client': 'ca-pub-8621788234752924',
+            defer: true,
+            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924',
+            crossorigin: "anonymous"
+        }
+        ]
 
 
     ],
