@@ -136,6 +136,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
         social: { // 社交图标，显示于博主信息栏和页脚栏
             // iconfontCssFile: '//at.alicdn.com/t/font_1879460_0lacnxoigx9.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
+            iconfontCssFile: 'https://at.alicdn.com/t/c/font_5043175_ij79oblabi.css',
             icons: [
                 {
                     iconClass: 'icon-github',
@@ -147,6 +148,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
                     iconClass: 'icon-erji',
                     title: '有品位的歌单',
                     link: 'http://music.163.com/playlist?id=8444337'
+                },
+
+                {
+                    iconClass: 'icon-zhihu',
+                    title: '知乎',
+                    link: 'https://www.zhihu.com/people/moxiaolong'
+                },
+                {
+                    iconClass: 'icon-MBTI2',
+                    title: 'MBTI测试',
+                    link: 'https://soulstation.club'
                 }
             ]
         },
