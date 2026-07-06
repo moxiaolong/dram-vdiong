@@ -19,105 +19,36 @@ import { VdoingThemeConfig } from 'vuepress-theme-vdoing/types'
  * ①注：在.md文件front matter配置`article: false`的页面是自定义页，未配置的默认是文章页（首页除外）。
  * ②注：windowLB 和 windowRB：1.展示区块最大宽高200px*400px。2.请给自定义元素定一个不超过200px*400px的宽高。3.在屏幕宽度小于960px时无论如何都不会显示。
  */
+
+// 底部 banner（文章页底部）— 暗紫 + 青绿神秘风，上下结构
+const pageBanner =
+  '<style>' +
+    '.psy-banner{display:flex;flex-direction:column;align-items:stretch;box-sizing:border-box;width:100%;margin:28px 0 18px;padding:30px 36px 26px;border:1px solid #5a2dbd;border-radius:14px;background:linear-gradient(180deg,#3a1d6e 0%,#5a2dbd 60%,#6b2dbd 100%);text-decoration:none;color:#e8dcff;transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease;}' +
+    '.psy-banner:hover{border-color:#3ae8a6;box-shadow:0 8px 22px rgba(58,232,166,.28);transform:translateY(-2px);}' +
+    '.psy-banner .psy-bn-h{font-size:24px;font-weight:800;color:#3ae8a6;padding:0 0 14px;margin-bottom:18px;border-bottom:1px solid rgba(58,232,166,.35);letter-spacing:1px;text-align:center;text-shadow:0 0 14px rgba(58,232,166,.4);}' +
+    '.psy-banner .psy-bn-body{margin-bottom:20px;}' +
+    '.psy-banner .psy-bn-lead{font-size:17px;font-weight:700;line-height:1.7;color:#3ae8a6;letter-spacing:.3px;text-align:center;text-shadow:0 0 10px rgba(58,232,166,.25);}' +
+    '.psy-banner .psy-bn-sub{margin-top:10px;font-size:14px;line-height:1.75;color:#e8dcff;letter-spacing:.1px;text-align:center;opacity:.92;}' +
+    '.psy-banner .psy-bn-cta{align-self:center;padding:12px 32px;font-size:14px;font-weight:700;color:#3a1d6e;background:#3ae8a6;border-radius:9px;letter-spacing:.8px;transition:background .25s ease,box-shadow .25s ease,transform .2s ease;}' +
+    '.psy-banner:hover .psy-bn-cta{background:#2bd49a;box-shadow:0 4px 14px rgba(43,212,154,.55);transform:scale(1.04);}' +
+    '@media (max-width:600px){' +
+      '.psy-banner{padding:24px 20px 22px;}' +
+      '.psy-banner .psy-bn-h{font-size:20px;}' +
+      '.psy-banner .psy-bn-lead{font-size:15px;}' +
+    '}' +
+  '</style>' +
+  '<a class="psy-banner" href="https://soulstation.club/psychoanalysis?entrance=dram" target="_blank" rel="noopener noreferrer">' +
+    '<div class="psy-bn-h">精神分析专家团</div>' +
+    '<div class="psy-bn-body">' +
+      '<div class="psy-bn-lead">拉康晦涩难懂？和蒸馏的拉康人格细聊！</div>' +
+      '<div class="psy-bn-sub">与弗洛伊德、荣格、拉康、齐泽克等多位精神分析专家人格深入对话，或群聊。</div>' +
+    '</div>' +
+    '<div class="psy-bn-cta">点击访问 →</div>' +
+  '</a>'
+
 const htmlModule: VdoingThemeConfig['htmlModules'] = {
-  homeSidebarB:
-    "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924\"\n" +
-      "     crossorigin=\"anonymous\"></script>" +
-      "<ins class=\"adsbygoogle\"\n" +
-                "     style=\"display:block\"\n" +
-                "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-                "     data-ad-slot=\"9814056513\"\n" +
-                "     data-ad-format=\"auto\"\n" +
-                "     data-full-width-responsive=\"true\"></ins>\n" +
-                "<script>\n" +
-                "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-                "</script>",
-  // `<!-- 纵向自适应 -->
-  // <ins class="adsbygoogle"
-  //     style="display:block;padding: 0.95rem;"
-  //     data-ad-client="ca-pub-7828333725993554"
-  //     data-ad-slot="7802654582"
-  //     data-ad-format="auto"
-  //     data-full-width-responsive="true"></ins>
-  // <script>
-  //     (adsbygoogle = window.adsbygoogle || []).push({});
-  // </script>`,
-  // sidebarT:
-  //   `<!--  固定100% * 150px可显示，max-height:150px 未见显示-->
-  //   <ins class="adsbygoogle"
-  //         style="display:inline-block;width:100%;max-height:150px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  sidebarB:
-      "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924\"\n" +
-      "     crossorigin=\"anonymous\"></script>" +
-      "<ins class=\"adsbygoogle\"\n" +
-      "     style=\"display:block\"\n" +
-      "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-      "     data-ad-slot=\"8498052873\"\n" +
-      "     data-ad-format=\"auto\"\n" +
-      "     data-full-width-responsive=\"true\"></ins>\n" +
-      "<script>\n" +
-      "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-      "</script>",
-  // pageT:
-  //   `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
-  //    <ins class="adsbygoogle"
-  //         style="display:inline-block;width:100%;max-height:90px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  // pageTshowMode: 'article',
-  pageB:
-      "<script async src=\"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8621788234752924\"\n" +
-      "     crossorigin=\"anonymous\"></script>" +
-      "</br><ins class=\"adsbygoogle\"\n" +
-      "     style=\"display:block; text-align:center;\"\n" +
-      "     data-ad-layout=\"in-article\"\n" +
-      "     data-ad-format=\"auto\"\n" +
-      "     data-ad-client=\"ca-pub-8621788234752924\"\n" +
-      "     data-ad-slot=\"7043271566\"></ins>\n" +
-      "<script>\n" +
-      "     (adsbygoogle = window.adsbygoogle || []).push({});\n" +
-      "</script>",
+  pageB: pageBanner,
   pageBshowMode: 'article',
-  // windowLB: // 会遮挡部分侧边栏
-  //   `<!-- 固定200*200px -->
-  //     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  //     <ins class="adsbygoogle"
-  //         style="display:inline-block;width:200px;height:200px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="6625304284"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>`,
-  // windowRB:
-  //   `<!-- 固定160*160px -->
-  //     <ins class="adsbygoogle"
-  //         style="display:inline-block;max-width:160px;max-height:160px"
-  //         data-ad-client="ca-pub-7828333725993554"
-  //         data-ad-slot="8377369658"></ins>
-  //     <script>
-  //         (adsbygoogle = window.adsbygoogle || []).push({});
-  //     </script>
-  //     `,
 }
-
-
-// const htmlModule = {
-//   homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   sidebarT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   sidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   pageT: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   pageB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   windowLB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-//   windowRB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,
-// }
-
 
 export default htmlModule
